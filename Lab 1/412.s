@@ -1,5 +1,5 @@
 .data
-    x: .asciz ""
+    x: .space 15
     newLine: .asciz "\n"
 .text
 .globl main

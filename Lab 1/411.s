@@ -1,12 +1,12 @@
 .data
-    x: .long 0x00
-    y: .long 0x01
+    y: .byte 3
+    x: .byte 1
 .text
 .globl main
 main:
-    movl x, %eax
-    movl y, %ebx
-    mov %eax, %ecx
-    mov %ebx, %eax
-    mov %ecx, %ebx
+    mov y, %eax
+    mov x, %ebx
+exit:
+    mov $1, %eax
+    mov $0, %ebx
     int $0x80
