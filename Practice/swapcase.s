@@ -25,7 +25,6 @@ init:
     mov $0, %ecx
     lea s, %esi
 
-
 for:
     cmp n, %ecx
     je print
@@ -44,7 +43,6 @@ for:
 cont:
     inc %ecx
     jmp for
-
 
 changeToLower:
     addb $32, %al
